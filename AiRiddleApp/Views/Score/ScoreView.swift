@@ -42,7 +42,7 @@ struct ScoreView: View {
                 isTitleViewActive = true
             }
             .font(.title2)
-            .fontWeight(.semibold)
+//            .fontWeight(.semibold)
             .foregroundColor(.white)
             .padding()
             .frame(maxWidth: .infinity)

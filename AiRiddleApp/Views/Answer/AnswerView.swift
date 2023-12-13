@@ -51,7 +51,7 @@ struct AnswerView: View {
                     onNext()
                 }
                 .font(.title2)
-                .fontWeight(.semibold)
+//                .fontWeight(.semibold)
                 .foregroundColor(.white)
                 .padding()
                 .frame(maxWidth: .infinity)

@@ -61,11 +61,13 @@ extension RiddleViewModel {
     
     func checkUserAnswer(_ userAnswer: String, for riddle: Riddle) -> Bool {
         let normalizedUserAnswer = userAnswer.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        let normalizedTrueAnswer = riddle.trueAnswer.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-
-        let isCorrect = normalizedUserAnswer == normalizedTrueAnswer
+        // trueAnswerを「。」で区切って、答えの部分のみを取得
+        let answerComponents = riddle.trueAnswer.split(separator: "。", maxSplits: 1, omittingEmptySubsequences: true)
+        let trueAnswerPart = answerComponents.first.map(String.init) ?? ""
+        let normalizedTrueAnswerPart = trueAnswerPart.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+//        print("trueAnswer:\(trueAnswerPart)")
+        let isCorrect = normalizedUserAnswer == normalizedTrueAnswerPart
         if isCorrect {
-            // 正解の場合のみ結果を追加
             correctAnswerCount += 1
             riddleResults.append(RiddleResult(riddle: riddle, isCorrect: true))
         }
