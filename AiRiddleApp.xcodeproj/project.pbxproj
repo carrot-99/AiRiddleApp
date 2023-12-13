@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8977D520DC681677CCDDBCC4 /* Pods_AiRiddleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */; };
+		CE45C1A22B24524F00FDB613 /* AiRiddleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1A12B24524F00FDB613 /* AiRiddleApp.swift */; };
+		CE45C1A42B24524F00FDB613 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1A32B24524F00FDB613 /* ContentView.swift */; };
+		CE45C1A62B24525000FDB613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1A52B24525000FDB613 /* Assets.xcassets */; };
+		CE45C1A92B24525000FDB613 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1A82B24525000FDB613 /* Preview Assets.xcassets */; };
+		CE45C1B42B2457D300FDB613 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B32B2457D300FDB613 /* Riddle.swift */; };
+		CE45C1B62B24582000FDB613 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B52B24582000FDB613 /* DBHelper.swift */; };
+		CE45C1B82B2458D200FDB613 /* RiddleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */; };
+		CE45C1BA2B2458F500FDB613 /* RiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B92B2458F500FDB613 /* RiddleView.swift */; };
+		CE45C1BC2B245C4800FDB613 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BB2B245C4800FDB613 /* AnswerView.swift */; };
+		CE45C1BE2B245C7200FDB613 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BD2B245C7200FDB613 /* TitleView.swift */; };
+		CE45C1C02B245DDA00FDB613 /* RiddlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */; };
+		CE45C1C32B245FBF00FDB613 /* Riddle.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1C22B245FBF00FDB613 /* Riddle.csv */; };
+		CE45C1C52B245FE700FDB613 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1C42B245FE700FDB613 /* CSVReader.swift */; };
+		CE45C1CB2B24797C00FDB613 /* CourseSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CA2B24797C00FDB613 /* CourseSelectionView.swift */; };
+		CE45C1CD2B247BA000FDB613 /* CourseRiddlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */; };
+		CE45C1CF2B2481E700FDB613 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CE2B2481E700FDB613 /* ScoreView.swift */; };
+		CE45C1D12B25820F00FDB613 /* AIAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */; };
+		CE45C1D32B25825F00FDB613 /* TrueAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */; };
+		CE45C1D52B25833100FDB613 /* UserAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D42B25833100FDB613 /* UserAnswerView.swift */; };
+		CE45C1D72B25853400FDB613 /* CorrectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */; };
+		CE45C1D92B25855C00FDB613 /* IncorrectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */; };
+		CE45C1DB2B25896000FDB613 /* DecisionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */; };
+		CE45C1DD2B25898900FDB613 /* ResultMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */; };
+		CE45C1E62B25A83B00FDB613 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1E52B25A83B00FDB613 /* TermsView.swift */; };
+		CE45C1E82B25A87C00FDB613 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1E72B25A87C00FDB613 /* PrivacyPolicyView.swift */; };
+		CE45C1EC2B25ABF000FDB613 /* AdMobBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */; };
+		CE45C1EE2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */; };
+		CE45C1F02B25B3BA00FDB613 /* CuteButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */; };
+		CE45C1F32B28244600FDB613 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1F22B28244600FDB613 /* TimerManager.swift */; };
+		CE45C1F52B28320800FDB613 /* RiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1F42B28320800FDB613 /* RiddleResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AiRiddleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45C19E2B24524F00FDB613 /* AiRiddleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiRiddleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45C1A12B24524F00FDB613 /* AiRiddleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiRiddleApp.swift; sourceTree = "<group>"; };
+		CE45C1A32B24524F00FDB613 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE45C1A52B24525000FDB613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE45C1A82B24525000FDB613 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE45C1B32B2457D300FDB613 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
+		CE45C1B52B24582000FDB613 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewModel.swift; sourceTree = "<group>"; };
+		CE45C1B92B2458F500FDB613 /* RiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleView.swift; sourceTree = "<group>"; };
+		CE45C1BB2B245C4800FDB613 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		CE45C1BD2B245C7200FDB613 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddlesView.swift; sourceTree = "<group>"; };
+		CE45C1C22B245FBF00FDB613 /* Riddle.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Riddle.csv; sourceTree = "<group>"; };
+		CE45C1C42B245FE700FDB613 /* CSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
+		CE45C1C62B24614900FDB613 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE45C1CA2B24797C00FDB613 /* CourseSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionView.swift; sourceTree = "<group>"; };
+		CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRiddlesView.swift; sourceTree = "<group>"; };
+		CE45C1CE2B2481E700FDB613 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnswerView.swift; sourceTree = "<group>"; };
+		CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueAnswerView.swift; sourceTree = "<group>"; };
+		CE45C1D42B25833100FDB613 /* UserAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnswerView.swift; sourceTree = "<group>"; };
+		CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectButtonView.swift; sourceTree = "<group>"; };
+		CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectButtonView.swift; sourceTree = "<group>"; };
+		CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionButtonsView.swift; sourceTree = "<group>"; };
+		CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessageView.swift; sourceTree = "<group>"; };
+		CE45C1E52B25A83B00FDB613 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		CE45C1E72B25A87C00FDB613 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		CE45C1E92B25AB0800FDB613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerView.swift; sourceTree = "<group>"; };
+		CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndPrivacyAgreementView.swift; sourceTree = "<group>"; };
+		CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteButtonStyle.swift; sourceTree = "<group>"; };
+		CE45C1F22B28244600FDB613 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		CE45C1F42B28320800FDB613 /* RiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleResult.swift; sourceTree = "<group>"; };
+		D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.release.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.release.xcconfig"; sourceTree = "<group>"; };
+		E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.debug.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE45C19B2B24524F00FDB613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8977D520DC681677CCDDBCC4 /* Pods_AiRiddleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DFFAEB2B74456E30017E0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1C62B24614900FDB613 /* SQLite.framework */,
+				7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B6A2991D10B6C4F358A699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */,
+				D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE45C1952B24524F00FDB613 = {
+			isa = PBXGroup;
+			children = (
+				CE45C1A02B24524F00FDB613 /* AiRiddleApp */,
+				CE45C19F2B24524F00FDB613 /* Products */,
+				C6B6A2991D10B6C4F358A699 /* Pods */,
+				2DFFAEB2B74456E30017E0FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE45C19F2B24524F00FDB613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C19E2B24524F00FDB613 /* AiRiddleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE45C1A02B24524F00FDB613 /* AiRiddleApp */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1A12B24524F00FDB613 /* AiRiddleApp.swift */,
+				CE45C1E92B25AB0800FDB613 /* Info.plist */,
+				CE45C1F12B26B85300FDB613 /* Components */,
+				CE45C1EA2B25ABDD00FDB613 /* Common */,
+				CE45C1C12B245FA900FDB613 /* Data */,
+				CE45C1B22B2452FA00FDB613 /* Services */,
+				CE45C1B02B2452D300FDB613 /* Models */,
+				CE45C1B12B2452EC00FDB613 /* ViewModels */,
+				CE45C1AF2B24528100FDB613 /* Views */,
+				CE45C1A52B24525000FDB613 /* Assets.xcassets */,
+				CE45C1A72B24525000FDB613 /* Preview Content */,
+			);
+			path = AiRiddleApp;
+			sourceTree = "<group>";
+		};
+		CE45C1A72B24525000FDB613 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1A82B24525000FDB613 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE45C1AF2B24528100FDB613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1A32B24524F00FDB613 /* ContentView.swift */,
+				CE45C1DE2B25A4D800FDB613 /* Title */,
+				CE45C1DF2B25A67700FDB613 /* CourseSelection */,
+				CE45C1E02B25A68D00FDB613 /* CourseRiddles */,
+				CE45C1E12B25A6AC00FDB613 /* Riddle */,
+				CE45C1E22B25A79E00FDB613 /* Answer */,
+				CE45C1E32B25A7CD00FDB613 /* Score */,
+				CE45C1E42B25A7FA00FDB613 /* TermsAndPrivacyPolicy */,
+				CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE45C1B02B2452D300FDB613 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1B32B2457D300FDB613 /* Riddle.swift */,
+				CE45C1F42B28320800FDB613 /* RiddleResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE45C1B12B2452EC00FDB613 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE45C1B22B2452FA00FDB613 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1C42B245FE700FDB613 /* CSVReader.swift */,
+				CE45C1B52B24582000FDB613 /* DBHelper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE45C1C12B245FA900FDB613 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1C22B245FBF00FDB613 /* Riddle.csv */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CE45C1DE2B25A4D800FDB613 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1BD2B245C7200FDB613 /* TitleView.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		CE45C1DF2B25A67700FDB613 /* CourseSelection */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1CA2B24797C00FDB613 /* CourseSelectionView.swift */,
+			);
+			path = CourseSelection;
+			sourceTree = "<group>";
+		};
+		CE45C1E02B25A68D00FDB613 /* CourseRiddles */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */,
+				CE45C1F22B28244600FDB613 /* TimerManager.swift */,
+			);
+			path = CourseRiddles;
+			sourceTree = "<group>";
+		};
+		CE45C1E12B25A6AC00FDB613 /* Riddle */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1B92B2458F500FDB613 /* RiddleView.swift */,
+			);
+			path = Riddle;
+			sourceTree = "<group>";
+		};
+		CE45C1E22B25A79E00FDB613 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1BB2B245C4800FDB613 /* AnswerView.swift */,
+				CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */,
+				CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */,
+				CE45C1D42B25833100FDB613 /* UserAnswerView.swift */,
+				CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */,
+				CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */,
+				CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */,
+				CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */,
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
+		CE45C1E32B25A7CD00FDB613 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1CE2B2481E700FDB613 /* ScoreView.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		CE45C1E42B25A7FA00FDB613 /* TermsAndPrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1E52B25A83B00FDB613 /* TermsView.swift */,
+				CE45C1E72B25A87C00FDB613 /* PrivacyPolicyView.swift */,
+				CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */,
+			);
+			path = TermsAndPrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		CE45C1EA2B25ABDD00FDB613 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE45C1F12B26B85300FDB613 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE45C19D2B24524F00FDB613 /* AiRiddleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE45C1AC2B24525000FDB613 /* Build configuration list for PBXNativeTarget "AiRiddleApp" */;
+			buildPhases = (
+				EE796A34277C3BF927E6CFB2 /* [CP] Check Pods Manifest.lock */,
+				CE45C19A2B24524F00FDB613 /* Sources */,
+				CE45C19B2B24524F00FDB613 /* Frameworks */,
+				CE45C19C2B24524F00FDB613 /* Resources */,
+				7325D531A67B750B40C1B8E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AiRiddleApp;
+			productName = AiRiddleApp;
+			productReference = CE45C19E2B24524F00FDB613 /* AiRiddleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE45C1962B24524F00FDB613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE45C19D2B24524F00FDB613 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CE45C1992B24524F00FDB613 /* Build configuration list for PBXProject "AiRiddleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE45C1952B24524F00FDB613;
+			productRefGroup = CE45C19F2B24524F00FDB613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE45C19D2B24524F00FDB613 /* AiRiddleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE45C19C2B24524F00FDB613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE45C1A92B24525000FDB613 /* Preview Assets.xcassets in Resources */,
+				CE45C1C32B245FBF00FDB613 /* Riddle.csv in Resources */,
+				CE45C1A62B24525000FDB613 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7325D531A67B750B40C1B8E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE796A34277C3BF927E6CFB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AiRiddleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE45C19A2B24524F00FDB613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE45C1D92B25855C00FDB613 /* IncorrectButtonView.swift in Sources */,
+				CE45C1BA2B2458F500FDB613 /* RiddleView.swift in Sources */,
+				CE45C1A42B24524F00FDB613 /* ContentView.swift in Sources */,
+				CE45C1BC2B245C4800FDB613 /* AnswerView.swift in Sources */,
+				CE45C1B42B2457D300FDB613 /* Riddle.swift in Sources */,
+				CE45C1F32B28244600FDB613 /* TimerManager.swift in Sources */,
+				CE45C1A22B24524F00FDB613 /* AiRiddleApp.swift in Sources */,
+				CE45C1DB2B25896000FDB613 /* DecisionButtonsView.swift in Sources */,
+				CE45C1CD2B247BA000FDB613 /* CourseRiddlesView.swift in Sources */,
+				CE45C1B82B2458D200FDB613 /* RiddleViewModel.swift in Sources */,
+				CE45C1DD2B25898900FDB613 /* ResultMessageView.swift in Sources */,
+				CE45C1C02B245DDA00FDB613 /* RiddlesView.swift in Sources */,
+				CE45C1D32B25825F00FDB613 /* TrueAnswerView.swift in Sources */,
+				CE45C1F02B25B3BA00FDB613 /* CuteButtonStyle.swift in Sources */,
+				CE45C1EE2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift in Sources */,
+				CE45C1D72B25853400FDB613 /* CorrectButtonView.swift in Sources */,
+				CE45C1E62B25A83B00FDB613 /* TermsView.swift in Sources */,
+				CE45C1F52B28320800FDB613 /* RiddleResult.swift in Sources */,
+				CE45C1D52B25833100FDB613 /* UserAnswerView.swift in Sources */,
+				CE45C1E82B25A87C00FDB613 /* PrivacyPolicyView.swift in Sources */,
+				CE45C1CB2B24797C00FDB613 /* CourseSelectionView.swift in Sources */,
+				CE45C1C52B245FE700FDB613 /* CSVReader.swift in Sources */,
+				CE45C1D12B25820F00FDB613 /* AIAnswerView.swift in Sources */,
+				CE45C1B62B24582000FDB613 /* DBHelper.swift in Sources */,
+				CE45C1EC2B25ABF000FDB613 /* AdMobBannerView.swift in Sources */,
+				CE45C1CF2B2481E700FDB613 /* ScoreView.swift in Sources */,
+				CE45C1BE2B245C7200FDB613 /* TitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE45C1AA2B24525000FDB613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE45C1AB2B24525000FDB613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE45C1AD2B24525000FDB613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AiRiddleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HXJLYHK5AY;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AiRiddleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.AiRiddleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE45C1AE2B24525000FDB613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AiRiddleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HXJLYHK5AY;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AiRiddleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.AiRiddleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE45C1992B24524F00FDB613 /* Build configuration list for PBXProject "AiRiddleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45C1AA2B24525000FDB613 /* Debug */,
+				CE45C1AB2B24525000FDB613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE45C1AC2B24525000FDB613 /* Build configuration list for PBXNativeTarget "AiRiddleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE45C1AD2B24525000FDB613 /* Debug */,
+				CE45C1AE2B24525000FDB613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE45C1962B24524F00FDB613 /* Project object */;
+}

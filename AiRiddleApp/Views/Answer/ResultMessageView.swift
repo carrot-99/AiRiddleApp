@@ -3,12 +3,13 @@
 import SwiftUI
 
 struct ResultMessageView: View {
+    let message: String
     let isCorrect: Bool
 
     var body: some View {
-        Text(isCorrect ? "正解！おめでとうございます！" : "残念、不正解です。")
-            .font(.headline)
+        Text(message)
             .foregroundColor(isCorrect ? .green : .red)
+            .font(UIDevice.current.userInterfaceIdiom == .pad ? .largeTitle : .largeTitle)
             .padding()
     }
 }

@@ -1,8 +1,19 @@
-//
 //  RiddlesView.swift
-//  AiRiddleApp
 //
-//  Created by USER on 2023/12/09.
+//import SwiftUI
 //
-
-import Foundation
+//struct RiddlesView: View {
+//    @ObservedObject var viewModel: RiddleViewModel
+//
+//    var body: some View {
+//        VStack {
+//            List(viewModel.riddles) { riddle in
+//                NavigationLink(destination: RiddleView(riddle: riddle)) {
+//                    Text(riddle.question)
+//                        .font(.headline)
+//                }
+//            }
+//            .navigationTitle("なぞなぞリスト")
+//        }
+//    }
+//}

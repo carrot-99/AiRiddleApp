@@ -1,8 +1,8 @@
-//
 //  RiddleResult.swift
-//  AiRiddleApp
-//
-//  Created by USER on 2023/12/12.
-//
 
 import Foundation
+
+struct RiddleResult {
+    var riddle: Riddle
+    var isCorrect: Bool
+}

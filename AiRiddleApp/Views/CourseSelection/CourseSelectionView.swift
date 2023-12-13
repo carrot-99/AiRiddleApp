@@ -11,7 +11,7 @@ struct CourseSelectionView: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("コースを選択してください")
-                .font(.title)
+                .font(UIDevice.current.userInterfaceIdiom == .pad ? .largeTitle : .title)
                 .padding()
 
             Button(action: {
@@ -20,12 +20,14 @@ struct CourseSelectionView: View {
                 isCourseSelectionPresented = true
             }) {
                 Text("10問コース")
-                    .font(.title2)
+                    .font(UIDevice.current.userInterfaceIdiom == .pad ? .title : .title2)
+                    .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(Capsule().fill(Color.green).shadow(radius: 10))
             }
+            .frame(maxWidth: .infinity)
 
             Button(action: {
                 viewModel.resetGame()
@@ -33,12 +35,14 @@ struct CourseSelectionView: View {
                 isCourseSelectionPresented = true
             }) {
                 Text("20問コース")
-                    .font(.title2)
+                    .font(UIDevice.current.userInterfaceIdiom == .pad ? .title : .title2)
+                    .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(Capsule().fill(Color.red).shadow(radius: 10))
             }
+//            .buttonStyle(CuteButtonStyle(bgColor: Color.red))
 
             Spacer()
         }

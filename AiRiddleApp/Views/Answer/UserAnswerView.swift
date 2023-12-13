@@ -6,11 +6,12 @@ struct UserAnswerView: View {
     let userAnswer: String
 
     var body: some View {
-        Text("あなたのこたえ:")
-            .font(.headline)
+        Text("あなたのこたえ")
+            .font(UIDevice.current.userInterfaceIdiom == .pad ? .title : .subheadline)
         
         Text(userAnswer)
-            .font(.title)
             .fontWeight(.bold)
+            .font(UIDevice.current.userInterfaceIdiom == .pad ? .title : .title3)
+            .padding()
     }
 }

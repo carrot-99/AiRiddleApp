@@ -5,11 +5,12 @@ import SwiftUI
 
 struct CuteButtonStyle: ButtonStyle {
     var bgColor: Color = Color.blue
+    var padding: CGFloat = 10
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(.white)
-            .padding()
+            .padding(padding)
             .background(bgColor)
             .cornerRadius(15)
             .shadow(color: .gray, radius: 2, x: 0, y: 2)
