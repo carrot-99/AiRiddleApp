@@ -30,9 +30,9 @@ struct ContentView: View {
                 }
                 
                 // 広告を表示
-//                AdMobBannerView()
-//                    .frame(width: UIScreen.main.bounds.width, height: 50)
-//                    .background(Color.gray.opacity(0.1))
+                AdMobBannerView()
+                    .frame(width: UIScreen.main.bounds.width, height: 50)
+                    .background(Color.gray.opacity(0.1))
             } else {
                 // 利用規約とプライバシーポリシーの同意画面
                 TermsAndPrivacyAgreementView(isShowingTerms: $isShowingTerms, hasAgreedToTerms: $hasAgreedToTerms)
