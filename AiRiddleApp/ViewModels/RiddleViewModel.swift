@@ -2,94 +2,49 @@
 
 import Foundation
 
-class RiddleViewModel: ObservableObject {
-    @Published var riddles: [Riddle] = []
-    @Published var correctAnswerCount = 0
-    @Published var riddleResults: [RiddleResult] = []
-    private var dbHelper: DBHelper = DBHelper()
+/// なぞなぞの一覧とプレイ記録を管理する（アプリ全体で1つ）
+final class RiddleViewModel: ObservableObject {
+    @Published private(set) var riddles: [Riddle] = []
+    @Published private(set) var stats: PlayStats
 
-    init() {
-        if dbHelper.isDatabaseEmpty() {
-            let csvReader = CSVReader()
-            let riddles = csvReader.readCSV(fileName: "Riddle")
-            riddles.forEach { riddle in
-                dbHelper.addRiddle(riddle: riddle)
-            }
-        }
-        fetchRiddles()
-    }
-    
-    func initializeDatabaseIfNeeded() {
-        if dbHelper.isDatabaseEmpty() {
-            let csvReader = CSVReader()
-            let riddles = csvReader.readCSV(fileName: "Riddle")
-            riddles.forEach { riddle in
-                dbHelper.addRiddle(riddle: riddle)
-                print("Adding riddle: \(riddle.question)")
-            }
-        }
-        fetchRiddles()
+    private let repository: RiddleRepository
+    private let statsStore: StatsStore
+
+    init(repository: RiddleRepository = RiddleRepository(), statsStore: StatsStore = StatsStore()) {
+        self.repository = repository
+        self.statsStore = statsStore
+        self.stats = statsStore.load()
+        loadRiddles()
     }
 
-    func fetchRiddles() {
-        self.riddles = dbHelper.getAllRiddles()
-        print("riddles count:\(riddles.count)")
+    /// CSVの問題をDBへ反映して読み込み直す
+    func loadRiddles() {
+        repository.sync(with: CSVReader.loadRiddles())
+        riddles = repository.fetchAll()
     }
 
-    func addRiddle(riddle: Riddle) {
-        dbHelper.addRiddle(riddle: riddle)
-        fetchRiddles()
+    func makeGame(for course: Course) -> GameViewModel {
+        let selected = Array(riddles.shuffled().prefix(course.questionCount))
+        return GameViewModel(course: course, riddles: selected)
     }
-}
 
-extension RiddleViewModel {
-    func addNewRiddlesFromCSV() {
-        let csvReader = CSVReader()
-        let newRiddles = csvReader.readCSV(fileName: "Riddle")
+    /// ゲーム結果を記録し、結果サマリーを返す
+    func record(_ game: GameViewModel) -> GameSummary {
+        let results = game.results
+        let correct = results.filter(\.isCorrect).count
+        let aiCorrect = results.filter(\.riddle.isAICorrect).count
 
-        newRiddles.forEach { riddle in
-            if !dbHelper.isRiddleExists(riddle: riddle) {
-                dbHelper.addRiddle(riddle: riddle)
-            }
-        }
-        fetchRiddles()
-    }
-    
-    func getRandomRiddles(count: Int) -> [Riddle] {
-        Array(riddles.shuffled().prefix(count))
-    }
-    
-    func checkUserAnswer(_ userAnswer: String, for riddle: Riddle) -> Bool {
-        let normalizedUserAnswer = userAnswer.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        // trueAnswerを「。」で区切って、答えの部分のみを取得
-        let answerComponents = riddle.trueAnswer.split(separator: "。", maxSplits: 1, omittingEmptySubsequences: true)
-        let trueAnswerPart = answerComponents.first.map(String.init) ?? ""
-        let normalizedTrueAnswerPart = trueAnswerPart.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-//        print("trueAnswer:\(trueAnswerPart)")
-        let isCorrect = normalizedUserAnswer == normalizedTrueAnswerPart
-        if isCorrect {
-            correctAnswerCount += 1
-            riddleResults.append(RiddleResult(riddle: riddle, isCorrect: true))
-        }
-        return isCorrect
-    }
-    
-    func resetGame() {
-        correctAnswerCount = 0
-        riddleResults.removeAll()
-    }
-    
-    func updateUserAnswer(for riddle: Riddle, isCorrect: Bool) {
-        // 結果を探して更新する
-        if let index = riddleResults.firstIndex(where: { $0.riddle.id == riddle.id }) {
-            riddleResults[index].isCorrect = isCorrect
-        } else {
-            // まだ結果がない場合は追加する
-            riddleResults.append(RiddleResult(riddle: riddle, isCorrect: isCorrect))
-        }
-        if isCorrect {
-            // 正解数を更新する
-            correctAnswerCount += 1
-        }
+        let previousBest = stats.bestScore(for: game.course)
+        // 過去の記録を上回ったときだけ「ベスト更新」とする
+        let isNewBest = previousBest.map { correct > $0 } ?? false
+
+        stats.playCount += 1
+        stats.answeredCount += results.count
+        stats.correctCount += correct
+        if correct > aiCorrect { stats.winsAgainstAI += 1 }
+        stats.bestScores[game.course.id] = max(previousBest ?? 0, correct)
+        statsStore.save(stats)
+
+        return GameSummary(course: game.course, results: results, isNewBest: isNewBest)
     }
 }

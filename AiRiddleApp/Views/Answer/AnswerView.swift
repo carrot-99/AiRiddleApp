@@ -2,76 +2,52 @@
 
 import SwiftUI
 
+/// 答え合わせの内容（結果メッセージ・正解・AIの答え・あなたの答え）
 struct AnswerView: View {
     let riddle: Riddle
-    @Binding var userAnswer: String
-    @Binding var isTimeUp: Bool
-    @Binding var showAnswer: Bool
-    var onNext: () -> Void
-    @State private var answerChecked = false
-    @State private var userDecisionNeeded = false
-    @State private var isCorrect = false
-    @State private var isShowResult = false
-    @ObservedObject var viewModel: RiddleViewModel
-
-    private var answerComponents: (answer: String, explanation: String) {
-        let components = riddle.aiAnswer.split(separator: "。", maxSplits: 1, omittingEmptySubsequences: true)
-        let answer = components.first.map(String.init) ?? ""
-        let explanation = components.count > 1 ? String(components[1]) : ""
-        return (answer: answer, explanation: explanation)
-    }
+    let userAnswer: String
+    /// nil の場合はユーザーが正誤を判断中
+    let outcome: RiddleResult.Outcome?
 
     var body: some View {
-        VStack {
-            // ユーザーに判断を促すボタン表示
-            if isTimeUp {
-                ResultMessageView(message: "残念、時間切れです。", isCorrect: false)
-                    .onAppear{ isShowResult = true }
-            } else if !isCorrect && !answerChecked {
-                DecisionButtonsView(answer: riddle.trueAnswer, userAnswer: userAnswer, action: checkAnswer(_:))
-            } else {
-                ResultMessageView(message: isCorrect ? "正解です！！" : "残念、不正解です。", isCorrect: isCorrect)
-                    .onAppear{ isShowResult = true }
+        VStack(spacing: 12) {
+            if let outcome {
+                ResultMessageView(outcome: outcome)
             }
-            
-            Spacer()
-            
-            ScrollView {
-                // 正解、AIの回答、ユーザーの回答を表示
-                Divider()
-                TrueAnswerView(trueAnswer: riddle.trueAnswer)
-                Divider()
-                AIAnswerView(answer: answerComponents.answer, explanation: answerComponents.explanation)
-                Divider()
-                UserAnswerView(userAnswer: userAnswer)
-            }
-            if isShowResult {
-                Button("次へ") {
-                    showAnswer = false
-                    onNext()
-                }
-                .font(.title2)
-//                .fontWeight(.semibold)
-                .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Capsule().fill(Color.blue).shadow(radius: 10))
-            }
-        }
-        .padding(.bottom, 60)
-        .padding()
-        .onAppear {
-            isCorrect = viewModel.checkUserAnswer(userAnswer, for: riddle)
-        }
-        .onDisappear {
-            isTimeUp = false
-            userAnswer = ""
+
+            AnswerCardView(
+                title: "せいかい",
+                systemImage: "star.fill",
+                tint: .orange,
+                text: riddle.truth
+            )
+
+            AnswerCardView(
+                title: "AIのこたえ",
+                systemImage: "cpu",
+                tint: .purple,
+                text: riddle.ai,
+                badge: riddle.isAICorrect
+                    ? AnswerCardView.Badge(text: "AIも正解", color: .green)
+                    : AnswerCardView.Badge(text: "AIはまちがい", color: .red)
+            )
+
+            AnswerCardView(
+                title: "あなたのこたえ",
+                systemImage: "person.fill",
+                tint: .blue,
+                text: AnswerText(answer: userAnswer.isEmpty ? "（未回答）" : userAnswer),
+                badge: outcome.map(Self.userBadge(for:))
+            )
         }
     }
-    
-    private func checkAnswer(_ userChoiceIsCorrect: Bool) {
-        answerChecked = true
-        self.isCorrect = userChoiceIsCorrect
-        viewModel.updateUserAnswer(for: riddle, isCorrect: userChoiceIsCorrect)
+
+    private static func userBadge(for outcome: RiddleResult.Outcome) -> AnswerCardView.Badge {
+        switch outcome {
+        case .correct: return AnswerCardView.Badge(text: "正解", color: .green)
+        case .incorrect: return AnswerCardView.Badge(text: "不正解", color: .red)
+        case .timeUp: return AnswerCardView.Badge(text: "時間切れ", color: .orange)
+        case .skipped: return AnswerCardView.Badge(text: "スキップ", color: .gray)
+        }
     }
 }

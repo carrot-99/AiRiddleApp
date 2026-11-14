@@ -25,3 +25,8 @@ Podfile.lock
 *.log
 *.tmp
 *.temp
+
+GoogleService-Info.plist
+
+# Local build output
+build/

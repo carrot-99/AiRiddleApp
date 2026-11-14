@@ -13,31 +13,31 @@
 		CE45C1A62B24525000FDB613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1A52B24525000FDB613 /* Assets.xcassets */; };
 		CE45C1A92B24525000FDB613 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1A82B24525000FDB613 /* Preview Assets.xcassets */; };
 		CE45C1B42B2457D300FDB613 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B32B2457D300FDB613 /* Riddle.swift */; };
-		CE45C1B62B24582000FDB613 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B52B24582000FDB613 /* DBHelper.swift */; };
 		CE45C1B82B2458D200FDB613 /* RiddleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */; };
 		CE45C1BA2B2458F500FDB613 /* RiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1B92B2458F500FDB613 /* RiddleView.swift */; };
 		CE45C1BC2B245C4800FDB613 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BB2B245C4800FDB613 /* AnswerView.swift */; };
 		CE45C1BE2B245C7200FDB613 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BD2B245C7200FDB613 /* TitleView.swift */; };
-		CE45C1C02B245DDA00FDB613 /* RiddlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */; };
 		CE45C1C32B245FBF00FDB613 /* Riddle.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1C22B245FBF00FDB613 /* Riddle.csv */; };
 		CE45C1C52B245FE700FDB613 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1C42B245FE700FDB613 /* CSVReader.swift */; };
 		CE45C1CB2B24797C00FDB613 /* CourseSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CA2B24797C00FDB613 /* CourseSelectionView.swift */; };
 		CE45C1CD2B247BA000FDB613 /* CourseRiddlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */; };
 		CE45C1CF2B2481E700FDB613 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1CE2B2481E700FDB613 /* ScoreView.swift */; };
-		CE45C1D12B25820F00FDB613 /* AIAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */; };
-		CE45C1D32B25825F00FDB613 /* TrueAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */; };
-		CE45C1D52B25833100FDB613 /* UserAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D42B25833100FDB613 /* UserAnswerView.swift */; };
-		CE45C1D72B25853400FDB613 /* CorrectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */; };
-		CE45C1D92B25855C00FDB613 /* IncorrectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */; };
 		CE45C1DB2B25896000FDB613 /* DecisionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */; };
 		CE45C1DD2B25898900FDB613 /* ResultMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */; };
 		CE45C1E62B25A83B00FDB613 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1E52B25A83B00FDB613 /* TermsView.swift */; };
 		CE45C1E82B25A87C00FDB613 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1E72B25A87C00FDB613 /* PrivacyPolicyView.swift */; };
 		CE45C1EC2B25ABF000FDB613 /* AdMobBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */; };
 		CE45C1EE2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */; };
-		CE45C1F02B25B3BA00FDB613 /* CuteButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */; };
-		CE45C1F32B28244600FDB613 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1F22B28244600FDB613 /* TimerManager.swift */; };
 		CE45C1F52B28320800FDB613 /* RiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1F42B28320800FDB613 /* RiddleResult.swift */; };
+		C662543805C8A3769A702C26 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC203926CF396A3116B112 /* Course.swift */; };
+		6DA9EC3E43B9010BC0CEFE9B /* AnswerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */; };
+		08B86A3CBA8D3A89C0C14601 /* RiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */; };
+		09D45C455C020F6FDD5F77B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717C8F99A76F38B276328D4 /* StatsStore.swift */; };
+		14EBBCCE332F821F087F2E3C /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75FF464FD033C5834C1689 /* Haptics.swift */; };
+		8F42FDFBBF1AD83CBD552C6A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */; };
+		18812BCC4E6BF2F872693421 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */; };
+		D69EDC2DE4C01BB0C8906CD6 /* AnswerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */; };
+		9234B05B9FCDC60BA554FFB9 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,23 +48,16 @@
 		CE45C1A52B24525000FDB613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE45C1A82B24525000FDB613 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE45C1B32B2457D300FDB613 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
-		CE45C1B52B24582000FDB613 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewModel.swift; sourceTree = "<group>"; };
 		CE45C1B92B2458F500FDB613 /* RiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleView.swift; sourceTree = "<group>"; };
 		CE45C1BB2B245C4800FDB613 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		CE45C1BD2B245C7200FDB613 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddlesView.swift; sourceTree = "<group>"; };
 		CE45C1C22B245FBF00FDB613 /* Riddle.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Riddle.csv; sourceTree = "<group>"; };
 		CE45C1C42B245FE700FDB613 /* CSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
 		CE45C1C62B24614900FDB613 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE45C1CA2B24797C00FDB613 /* CourseSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSelectionView.swift; sourceTree = "<group>"; };
 		CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRiddlesView.swift; sourceTree = "<group>"; };
 		CE45C1CE2B2481E700FDB613 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnswerView.swift; sourceTree = "<group>"; };
-		CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueAnswerView.swift; sourceTree = "<group>"; };
-		CE45C1D42B25833100FDB613 /* UserAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnswerView.swift; sourceTree = "<group>"; };
-		CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectButtonView.swift; sourceTree = "<group>"; };
-		CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectButtonView.swift; sourceTree = "<group>"; };
 		CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionButtonsView.swift; sourceTree = "<group>"; };
 		CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessageView.swift; sourceTree = "<group>"; };
 		CE45C1E52B25A83B00FDB613 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
@@ -72,11 +65,18 @@
 		CE45C1E92B25AB0800FDB613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerView.swift; sourceTree = "<group>"; };
 		CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndPrivacyAgreementView.swift; sourceTree = "<group>"; };
-		CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteButtonStyle.swift; sourceTree = "<group>"; };
-		CE45C1F22B28244600FDB613 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		CE45C1F42B28320800FDB613 /* RiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleResult.swift; sourceTree = "<group>"; };
 		D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.release.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.release.xcconfig"; sourceTree = "<group>"; };
 		E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.debug.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		55BC203926CF396A3116B112 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMatcher.swift; sourceTree = "<group>"; };
+		6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepository.swift; sourceTree = "<group>"; };
+		F717C8F99A76F38B276328D4 /* StatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStore.swift; sourceTree = "<group>"; };
+		FB75FF464FD033C5834C1689 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardView.swift; sourceTree = "<group>"; };
+		26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,6 @@
 				CE45C1E22B25A79E00FDB613 /* Answer */,
 				CE45C1E32B25A7CD00FDB613 /* Score */,
 				CE45C1E42B25A7FA00FDB613 /* TermsAndPrivacyPolicy */,
-				CE45C1BF2B245DDA00FDB613 /* RiddlesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 		CE45C1B02B2452D300FDB613 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				55BC203926CF396A3116B112 /* Course.swift */,
 				CE45C1B32B2457D300FDB613 /* Riddle.swift */,
 				CE45C1F42B28320800FDB613 /* RiddleResult.swift */,
 			);
@@ -181,6 +181,7 @@
 		CE45C1B12B2452EC00FDB613 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */,
 				CE45C1B72B2458D200FDB613 /* RiddleViewModel.swift */,
 			);
 			path = ViewModels;
@@ -189,8 +190,10 @@
 		CE45C1B22B2452FA00FDB613 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F717C8F99A76F38B276328D4 /* StatsStore.swift */,
+				6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */,
+				FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */,
 				CE45C1C42B245FE700FDB613 /* CSVReader.swift */,
-				CE45C1B52B24582000FDB613 /* DBHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -223,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				CE45C1CC2B247BA000FDB613 /* CourseRiddlesView.swift */,
-				CE45C1F22B28244600FDB613 /* TimerManager.swift */,
 			);
 			path = CourseRiddles;
 			sourceTree = "<group>";
@@ -239,12 +241,8 @@
 		CE45C1E22B25A79E00FDB613 /* Answer */ = {
 			isa = PBXGroup;
 			children = (
+				0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */,
 				CE45C1BB2B245C4800FDB613 /* AnswerView.swift */,
-				CE45C1D22B25825F00FDB613 /* TrueAnswerView.swift */,
-				CE45C1D02B25820F00FDB613 /* AIAnswerView.swift */,
-				CE45C1D42B25833100FDB613 /* UserAnswerView.swift */,
-				CE45C1D62B25853400FDB613 /* CorrectButtonView.swift */,
-				CE45C1D82B25855C00FDB613 /* IncorrectButtonView.swift */,
 				CE45C1DA2B25896000FDB613 /* DecisionButtonsView.swift */,
 				CE45C1DC2B25898900FDB613 /* ResultMessageView.swift */,
 			);
@@ -254,6 +252,7 @@
 		CE45C1E32B25A7CD00FDB613 /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */,
 				CE45C1CE2B2481E700FDB613 /* ScoreView.swift */,
 			);
 			path = Score;
@@ -272,6 +271,7 @@
 		CE45C1EA2B25ABDD00FDB613 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FB75FF464FD033C5834C1689 /* Haptics.swift */,
 				CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */,
 			);
 			path = Common;
@@ -280,7 +280,7 @@
 		CE45C1F12B26B85300FDB613 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				CE45C1EF2B25B3BA00FDB613 /* CuteButtonStyle.swift */,
+				884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -400,30 +400,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE45C1D92B25855C00FDB613 /* IncorrectButtonView.swift in Sources */,
+				9234B05B9FCDC60BA554FFB9 /* ResultDetailView.swift in Sources */,
+				D69EDC2DE4C01BB0C8906CD6 /* AnswerCardView.swift in Sources */,
+				18812BCC4E6BF2F872693421 /* AppStyle.swift in Sources */,
+				8F42FDFBBF1AD83CBD552C6A /* GameViewModel.swift in Sources */,
+				14EBBCCE332F821F087F2E3C /* Haptics.swift in Sources */,
+				09D45C455C020F6FDD5F77B7 /* StatsStore.swift in Sources */,
+				08B86A3CBA8D3A89C0C14601 /* RiddleRepository.swift in Sources */,
+				6DA9EC3E43B9010BC0CEFE9B /* AnswerMatcher.swift in Sources */,
+				C662543805C8A3769A702C26 /* Course.swift in Sources */,
 				CE45C1BA2B2458F500FDB613 /* RiddleView.swift in Sources */,
 				CE45C1A42B24524F00FDB613 /* ContentView.swift in Sources */,
 				CE45C1BC2B245C4800FDB613 /* AnswerView.swift in Sources */,
 				CE45C1B42B2457D300FDB613 /* Riddle.swift in Sources */,
-				CE45C1F32B28244600FDB613 /* TimerManager.swift in Sources */,
 				CE45C1A22B24524F00FDB613 /* AiRiddleApp.swift in Sources */,
 				CE45C1DB2B25896000FDB613 /* DecisionButtonsView.swift in Sources */,
 				CE45C1CD2B247BA000FDB613 /* CourseRiddlesView.swift in Sources */,
 				CE45C1B82B2458D200FDB613 /* RiddleViewModel.swift in Sources */,
 				CE45C1DD2B25898900FDB613 /* ResultMessageView.swift in Sources */,
-				CE45C1C02B245DDA00FDB613 /* RiddlesView.swift in Sources */,
-				CE45C1D32B25825F00FDB613 /* TrueAnswerView.swift in Sources */,
-				CE45C1F02B25B3BA00FDB613 /* CuteButtonStyle.swift in Sources */,
 				CE45C1EE2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift in Sources */,
-				CE45C1D72B25853400FDB613 /* CorrectButtonView.swift in Sources */,
 				CE45C1E62B25A83B00FDB613 /* TermsView.swift in Sources */,
 				CE45C1F52B28320800FDB613 /* RiddleResult.swift in Sources */,
-				CE45C1D52B25833100FDB613 /* UserAnswerView.swift in Sources */,
 				CE45C1E82B25A87C00FDB613 /* PrivacyPolicyView.swift in Sources */,
 				CE45C1CB2B24797C00FDB613 /* CourseSelectionView.swift in Sources */,
 				CE45C1C52B245FE700FDB613 /* CSVReader.swift in Sources */,
-				CE45C1D12B25820F00FDB613 /* AIAnswerView.swift in Sources */,
-				CE45C1B62B24582000FDB613 /* DBHelper.swift in Sources */,
 				CE45C1EC2B25ABF000FDB613 /* AdMobBannerView.swift in Sources */,
 				CE45C1CF2B2481E700FDB613 /* ScoreView.swift in Sources */,
 				CE45C1BE2B245C7200FDB613 /* TitleView.swift in Sources */,
