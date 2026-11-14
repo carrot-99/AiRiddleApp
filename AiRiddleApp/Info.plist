@@ -202,7 +202,7 @@
 		</dict>
 	</array>
 	<key>AdUnitID</key>
-	<string>ca-app-pub-1407897196194439/3600300242</string>
+	<string>$(ADMOB_BANNER_UNIT_ID)</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-1407897196194439~3379457323</string>
 </dict>

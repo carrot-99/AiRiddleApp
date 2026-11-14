@@ -9,6 +9,11 @@ target 'AiRiddleApp' do
   pod 'SQLite.swift'
   pod 'Google-Mobile-Ads-SDK'
 
+  # ユニットテスト（アプリをホストにして実行する）
+  target 'AiRiddleAppTests' do
+    inherit! :search_paths
+  end
+
 end
 
 # 新しい Xcode は iOS 15 未満を対象にしたビルドを受け付けないため、

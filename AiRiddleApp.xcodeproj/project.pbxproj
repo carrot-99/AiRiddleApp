@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08B86A3CBA8D3A89C0C14601 /* RiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */; };
+		09D45C455C020F6FDD5F77B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717C8F99A76F38B276328D4 /* StatsStore.swift */; };
+		14EBBCCE332F821F087F2E3C /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75FF464FD033C5834C1689 /* Haptics.swift */; };
+		18812BCC4E6BF2F872693421 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */; };
+		31904A7F3A287CB318A4C45E /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3154513DFE94F9E32708740 /* GameViewModelTests.swift */; };
+		63DAC075080E58E88AD3014B /* RiddleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23A92C7CE1C154339E4A06 /* RiddleViewModelTests.swift */; };
+		6DA9EC3E43B9010BC0CEFE9B /* AnswerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */; };
 		8977D520DC681677CCDDBCC4 /* Pods_AiRiddleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */; };
+		8F42FDFBBF1AD83CBD552C6A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */; };
+		9234B05B9FCDC60BA554FFB9 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */; };
+		AD6C9A6A2D3C4B49AF9ABC74 /* AnswerMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CCBD6491BE72FC53BCAE /* AnswerMatcherTests.swift */; };
+		B37A76B1B471F797C1AFB92F /* Pods_AiRiddleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A899B539E426F7E3212C58F /* Pods_AiRiddleAppTests.framework */; };
+		C2D0715E995B8A06640F6127 /* RiddleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097FA10ABF5AD089E1BDD13F /* RiddleRepositoryTests.swift */; };
+		C662543805C8A3769A702C26 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC203926CF396A3116B112 /* Course.swift */; };
+		CC7399AAAD7BF660CBF186AC /* CSVReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39F09D0DE8D6F778BA8C71 /* CSVReaderTests.swift */; };
 		CE45C1A22B24524F00FDB613 /* AiRiddleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1A12B24524F00FDB613 /* AiRiddleApp.swift */; };
 		CE45C1A42B24524F00FDB613 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1A32B24524F00FDB613 /* ContentView.swift */; };
 		CE45C1A62B24525000FDB613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE45C1A52B24525000FDB613 /* Assets.xcassets */; };
@@ -29,19 +43,34 @@
 		CE45C1EC2B25ABF000FDB613 /* AdMobBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */; };
 		CE45C1EE2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */; };
 		CE45C1F52B28320800FDB613 /* RiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C1F42B28320800FDB613 /* RiddleResult.swift */; };
-		C662543805C8A3769A702C26 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC203926CF396A3116B112 /* Course.swift */; };
-		6DA9EC3E43B9010BC0CEFE9B /* AnswerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */; };
-		08B86A3CBA8D3A89C0C14601 /* RiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */; };
-		09D45C455C020F6FDD5F77B7 /* StatsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717C8F99A76F38B276328D4 /* StatsStore.swift */; };
-		14EBBCCE332F821F087F2E3C /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75FF464FD033C5834C1689 /* Haptics.swift */; };
-		8F42FDFBBF1AD83CBD552C6A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */; };
-		18812BCC4E6BF2F872693421 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */; };
 		D69EDC2DE4C01BB0C8906CD6 /* AnswerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */; };
-		9234B05B9FCDC60BA554FFB9 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F7C26B6110AEC4DFF9D574D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE45C1962B24524F00FDB613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE45C19D2B24524F00FDB613;
+			remoteInfo = AiRiddleApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		097FA10ABF5AD089E1BDD13F /* RiddleRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepositoryTests.swift; sourceTree = "<group>"; };
+		0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardView.swift; sourceTree = "<group>"; };
+		26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
+		34B4659ECCFD21A273AC65B3 /* AiRiddleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiRiddleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		55BC203926CF396A3116B112 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		5F23A92C7CE1C154339E4A06 /* RiddleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleViewModelTests.swift; sourceTree = "<group>"; };
+		6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepository.swift; sourceTree = "<group>"; };
 		7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AiRiddleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		8A899B539E426F7E3212C58F /* Pods_AiRiddleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AiRiddleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3154513DFE94F9E32708740 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
+		AFC6CCBD6491BE72FC53BCAE /* AnswerMatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMatcherTests.swift; sourceTree = "<group>"; };
+		BE39F09D0DE8D6F778BA8C71 /* CSVReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReaderTests.swift; sourceTree = "<group>"; };
 		CE45C19E2B24524F00FDB613 /* AiRiddleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiRiddleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE45C1A12B24524F00FDB613 /* AiRiddleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiRiddleApp.swift; sourceTree = "<group>"; };
 		CE45C1A32B24524F00FDB613 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,20 +95,24 @@
 		CE45C1EB2B25ABF000FDB613 /* AdMobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerView.swift; sourceTree = "<group>"; };
 		CE45C1ED2B25B1D700FDB613 /* TermsAndPrivacyAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndPrivacyAgreementView.swift; sourceTree = "<group>"; };
 		CE45C1F42B28320800FDB613 /* RiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleResult.swift; sourceTree = "<group>"; };
+		D11B719C4B0BEFD0DE82B3C1 /* Pods-AiRiddleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AiRiddleAppTests/Pods-AiRiddleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.release.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.release.xcconfig"; sourceTree = "<group>"; };
+		DC1EB24BCE8B4A428FF1C111 /* Pods-AiRiddleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleAppTests.release.xcconfig"; path = "Target Support Files/Pods-AiRiddleAppTests/Pods-AiRiddleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiRiddleApp.debug.xcconfig"; path = "Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		55BC203926CF396A3116B112 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMatcher.swift; sourceTree = "<group>"; };
-		6E411315A7EEC170A84EE0CA /* RiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepository.swift; sourceTree = "<group>"; };
 		F717C8F99A76F38B276328D4 /* StatsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStore.swift; sourceTree = "<group>"; };
 		FB75FF464FD033C5834C1689 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
-		43EEE64A953A8F8B729D49F4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		884FDA7D6248E1D0B60D3D52 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
-		0E223558D82EBF5BFFCC47F6 /* AnswerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardView.swift; sourceTree = "<group>"; };
-		26C3670D3A22C0E7864544C1 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
+		FBF6AB1C4BD6B42BB4342915 /* AnswerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		38DF0C21D596668E325D3DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37A76B1B471F797C1AFB92F /* Pods_AiRiddleAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE45C19B2B24524F00FDB613 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,8 +129,21 @@
 			children = (
 				CE45C1C62B24614900FDB613 /* SQLite.framework */,
 				7FA505D4B369DAFE6B56029A /* Pods_AiRiddleApp.framework */,
+				8A899B539E426F7E3212C58F /* Pods_AiRiddleAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687B44E169E511A426B31704 /* AiRiddleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6CCBD6491BE72FC53BCAE /* AnswerMatcherTests.swift */,
+				BE39F09D0DE8D6F778BA8C71 /* CSVReaderTests.swift */,
+				A3154513DFE94F9E32708740 /* GameViewModelTests.swift */,
+				097FA10ABF5AD089E1BDD13F /* RiddleRepositoryTests.swift */,
+				5F23A92C7CE1C154339E4A06 /* RiddleViewModelTests.swift */,
+			);
+			path = AiRiddleAppTests;
 			sourceTree = "<group>";
 		};
 		C6B6A2991D10B6C4F358A699 /* Pods */ = {
@@ -105,6 +151,8 @@
 			children = (
 				E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */,
 				D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */,
+				D11B719C4B0BEFD0DE82B3C1 /* Pods-AiRiddleAppTests.debug.xcconfig */,
+				DC1EB24BCE8B4A428FF1C111 /* Pods-AiRiddleAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -113,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CE45C1A02B24524F00FDB613 /* AiRiddleApp */,
+				687B44E169E511A426B31704 /* AiRiddleAppTests */,
 				CE45C19F2B24524F00FDB613 /* Products */,
 				C6B6A2991D10B6C4F358A699 /* Pods */,
 				2DFFAEB2B74456E30017E0FC /* Frameworks */,
@@ -123,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CE45C19E2B24524F00FDB613 /* AiRiddleApp.app */,
+				34B4659ECCFD21A273AC65B3 /* AiRiddleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +338,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6CA587EC28AA982980872F7 /* AiRiddleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD21F8EB966A209ADEB88445 /* Build configuration list for PBXNativeTarget "AiRiddleAppTests" */;
+			buildPhases = (
+				CC5FD7D2D33E49D055749A5B /* [CP] Check Pods Manifest.lock */,
+				3494B81BB4120B2269472A38 /* Sources */,
+				38DF0C21D596668E325D3DAD /* Frameworks */,
+				9BA84EC236AFE5022C73C089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EC6C2A2C760EBAE7D860B60 /* PBXTargetDependency */,
+			);
+			name = AiRiddleAppTests;
+			productName = AiRiddleAppTests;
+			productReference = 34B4659ECCFD21A273AC65B3 /* AiRiddleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE45C19D2B24524F00FDB613 /* AiRiddleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE45C1AC2B24525000FDB613 /* Build configuration list for PBXNativeTarget "AiRiddleApp" */;
@@ -317,6 +386,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					B6CA587EC28AA982980872F7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CE45C19D2B24524F00FDB613;
+					};
 					CE45C19D2B24524F00FDB613 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -336,11 +409,19 @@
 			projectRoot = "";
 			targets = (
 				CE45C19D2B24524F00FDB613 /* AiRiddleApp */,
+				B6CA587EC28AA982980872F7 /* AiRiddleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9BA84EC236AFE5022C73C089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE45C19C2B24524F00FDB613 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +452,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AiRiddleApp/Pods-AiRiddleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CC5FD7D2D33E49D055749A5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AiRiddleAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE796A34277C3BF927E6CFB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +499,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3494B81BB4120B2269472A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6C9A6A2D3C4B49AF9ABC74 /* AnswerMatcherTests.swift in Sources */,
+				CC7399AAAD7BF660CBF186AC /* CSVReaderTests.swift in Sources */,
+				31904A7F3A287CB318A4C45E /* GameViewModelTests.swift in Sources */,
+				C2D0715E995B8A06640F6127 /* RiddleRepositoryTests.swift in Sources */,
+				63DAC075080E58E88AD3014B /* RiddleViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE45C19A2B24524F00FDB613 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,7 +547,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2EC6C2A2C760EBAE7D860B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE45C19D2B24524F00FDB613 /* AiRiddleApp */;
+			targetProxy = F7C26B6110AEC4DFF9D574D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C5ACDB66CE58853959DB7FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11B719C4B0BEFD0DE82B3C1 /* Pods-AiRiddleAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXJLYHK5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.AiRiddleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiRiddleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AiRiddleApp";
+			};
+			name = Debug;
+		};
+		C8D2364980BFFCA5EAA2B2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1EB24BCE8B4A428FF1C111 /* Pods-AiRiddleAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXJLYHK5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.AiRiddleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiRiddleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AiRiddleApp";
+			};
+			name = Release;
+		};
 		CE45C1AA2B24525000FDB613 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -556,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27B4F4EECEF4543BFA34260 /* Pods-AiRiddleApp.debug.xcconfig */;
 			buildSettings = {
+				ADMOB_BANNER_UNIT_ID = "ca-app-pub-3940256099942544/2934735716";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D194685E97C5A27947C5BD95 /* Pods-AiRiddleApp.release.xcconfig */;
 			buildSettings = {
+				ADMOB_BANNER_UNIT_ID = "ca-app-pub-1407897196194439/3600300242";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +784,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD21F8EB966A209ADEB88445 /* Build configuration list for PBXNativeTarget "AiRiddleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ACDB66CE58853959DB7FE4 /* Debug */,
+				C8D2364980BFFCA5EAA2B2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE45C1992B24524F00FDB613 /* Build configuration list for PBXProject "AiRiddleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

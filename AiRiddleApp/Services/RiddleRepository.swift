@@ -21,12 +21,11 @@ final class RiddleRepository {
         static let trueAnswer = SQLite.Expression<String>("trueAnswer")
     }
 
-    init(fileName: String = "db.sqlite3") {
+    /// - Parameter fileURL: DBファイルの場所。省略時は Documents/db.sqlite3（テストでは一時ファイルを渡す）
+    init(fileURL: URL? = nil) {
         do {
-            let directory = try FileManager.default.url(
-                for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true
-            )
-            let connection = try Connection(directory.appendingPathComponent(fileName).path)
+            let url = try fileURL ?? Self.defaultFileURL()
+            let connection = try Connection(url.path)
             try connection.run(Schema.table.create(ifNotExists: true) { table in
                 table.column(Schema.id, primaryKey: .autoincrement)
                 table.column(Schema.question)
@@ -38,6 +37,12 @@ final class RiddleRepository {
             print("Database setup error: \(error)")
             db = nil
         }
+    }
+
+    private static func defaultFileURL() throws -> URL {
+        try FileManager.default
+            .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            .appendingPathComponent("db.sqlite3")
     }
 
     /// CSVの内容をDBへ反映する
